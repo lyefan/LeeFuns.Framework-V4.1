@@ -143,6 +143,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,11 +156,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Resource\Document\Email\20141016\0bff50af-85bb-4245-9e51-604d39f4770b.png" />
+    <Content Include="Resource\Document\Email\20141016\1ddaa63c-bfbe-4c7a-83b3-377417b76abd.png" />
+    <Content Include="Resource\Document\Email\20141016\281df26a-cf92-4929-8a73-66d4ec6ad46a.txt" />
+    <Content Include="Resource\Document\Email\20141016\5439517c-1be9-4d17-b9b8-1ccdbfcb8db0.txt" />
+    <Content Include="Resource\Document\Email\20141016\60ced1e7-af92-45b0-a049-1cc572643f50.png" />
+    <Content Include="Resource\Document\Email\20141016\b2545837-d7c1-4394-8c5e-889cb8da5f34.png" />
+    <Content Include="Resource\Document\Email\20141016\bea73424-28b4-4518-a9e9-d16866951231.png" />
+    <Content Include="Resource\Document\Email\20141016\c0cfa300-6899-4518-9a49-2e4fa208ef16.png" />
+    <Content Include="Resource\Document\Email\20141016\cac24142-086b-4c15-aad5-6b0c185535d6.png" />
+    <Content Include="Resource\Document\Email\20141016\f0199eea-24b4-4435-b77c-699003c8986d.png" />
+    <Content Include="Resource\Document\NetworkDisk\149c1ae5-f4b0-4d88-b26b-0c84c4507ec6\20141021\568efce7-20c9-466e-9632-e74e77231658.dll" />
+    <Content Include="Resource\Document\NetworkDisk\149c1ae5-f4b0-4d88-b26b-0c84c4507ec6\20141021\869d2c99-cb65-4b70-9019-b6952b2d17fa.exe" />
+    <Content Include="Resource\PDF\20141024101421648.swf" />
+    <Content Include="Resource\PDF\分析与智能决策系统.swf" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resource\IPScaner\QQWry.Dat" />
+    <Content Include="Resource\PDF\分析与智能决策系统.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -185,10 +202,17 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="XmlConfig\log4net.config" />
+    <Content Include="XmlConfig\system.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Resource\DbBackup\" />
+    <Folder Include="Resource\Document\Email\20140928\" />
+    <Folder Include="Resource\Photo\" />
+    <Folder Include="Resource\Template\" />
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C30570F-B52B-49CF-B204-5B7EA206AF7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeeFuns.Business</RootNamespace>
+    <AssemblyName>LeeFuns.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseUtility\BaseFactory.cs" />
+    <Compile Include="BaseUtility\BaseManager.cs" />
+    <Compile Include="BaseUtility\IBaseManager.cs" />
+    <Compile Include="CommonModule\Base_CompanyBll.cs" />
+    <Compile Include="CommonModule\Base_DepartmentBll.cs" />
+    <Compile Include="CommonModule\Base_ModuleBll.cs" />
+    <Compile Include="CommonModule\Base_ModulePermissionBll.cs" />
+    <Compile Include="CommonModule\Base_UserBll.cs" />
+    <Compile Include="CommonModule\Oracle\Base_CompanyBll.cs" />
+    <Compile Include="CommonModule\Oracle\Base_DepartmentBll.cs" />
+    <Compile Include="CommonModule\Oracle\Base_ModuleBll.cs" />
+    <Compile Include="CommonModule\Oracle\Base_ModulePermissionBll.cs" />
+    <Compile Include="CommonModule\Oracle\Base_UserBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeeFuns.Cache\LeeFuns.Cache.csproj">
+      <Project>{87d8118c-4fcb-460f-a142-26bf32cc64df}</Project>
+      <Name>LeeFuns.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeeFuns.DataAccess\LeeFuns.DataAccess.csproj">
+      <Project>{7b51c2f5-216b-4a8f-829d-0c6c19e71271}</Project>
+      <Name>LeeFuns.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeeFuns.Entity\LeeFuns.Entity.csproj">
+      <Project>{c17839fc-b102-4b03-b4f1-a83d5709b2c7}</Project>
+      <Name>LeeFuns.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeeFuns.Repository\LeeFuns.Repository.csproj">
+      <Project>{af5210e4-a6b5-4e07-99e0-1d822f09d8a2}</Project>
+      <Name>LeeFuns.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeeFuns.Utilities\LeeFuns.Utilities.csproj">
+      <Project>{437e7fb0-126f-4fd1-9dbb-05e7ccdb2609}</Project>
+      <Name>LeeFuns.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -14,9 +14,9 @@ namespace LeeFuns.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "Default",                        // 路由名
+                url: "{controller}/{action}/{id}",      // URL参数
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }     // 默认参数
             );
         }
     }
